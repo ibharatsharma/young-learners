@@ -92,11 +92,12 @@ td {
 
 .grid-item {
     flex: 1;
-    min-width: calc(33.33% - 20px);
+    min-width: calc(20% - 20px);
     box-sizing: border-box;
     background-color: #d3ebf0;
     padding: 10px;
     border: 1px solid #219ebc;
+    margin: 50px;
 }
 
 .grid-item h3 {
