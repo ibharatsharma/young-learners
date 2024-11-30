@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Times Tables Up to 20</h2>
+<div class="grid-container">
+    {% for key, values in times.items() %}
+        {% if loop.index0 % 3 == 0 %}
+            {% if not loop.first %}
+                </div>
+            {% endif %}
+            <div class="grid-row">
+        {% endif %}
+        <div class="grid-item">
+            <h3>Times Table for {{ key }}</h3>
+            <ul>
+                {% for value in values %}
+                    <li>{{ key }} x {{ loop.index }} = {{ value }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% if loop.last %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

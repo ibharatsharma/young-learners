@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+header {
+    background-color: #8ecae6;
+    padding: 10px;
+    text-align: center;
+}
+
+nav.main-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #219ebc;
+    display: flex;
+    justify-content: center;
+}
+
+nav.main-nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+aside {
+    width: 200px;
+    float: left;
+    background-color: #8ecae6;
+    padding: 10px;
+}
+
+nav.sub-nav {
+    list-style: none;
+    padding: 0;
+}
+
+nav.sub-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #e0fbfc;
+}
+
+/* Add new styles for times tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #219ebc;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #8ecae6;
+}
+
+td {
+    background-color: #e0fbfc;
+}
+
+/* Add new styles for times tables */
+/* Add new styles for the grid layout */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.grid-row {
+    display: flex;
+    width: 100%;
+}
+
+.grid-item {
+    flex: 1;
+    min-width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    background-color: #d3ebf0;
+    padding: 10px;
+    border: 1px solid #219ebc;
+}
+
+.grid-item h3 {
+    margin: 0 0 10px 0;
+}
+
+.grid-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.grid-item ul li {
+    padding: 5px 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+}
